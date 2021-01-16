@@ -85,5 +85,5 @@ gulp.task('watch', () => {
   gulp.watch('./src/*.html', gulp.series('minifyHTML'))
   gulp.watch("./build/*.html").on('change', browserSync.reload);
 });
-gulp.task('start', gulp.series('del', gulp.parallel('styles', 'image-compress', 'scripts', 'minifyHTML'), 'watch'));
+gulp.task('start', gulp.series('del', gulp.parallel('styles', 'image-compress', 'scripts', 'minifyHTML', 'copy'), 'watch'));
 gulp.task('build', gulp.series('del', gulp.parallel('styles', 'image-compress', 'scripts', 'minifyHTML'), 'copy'));

@@ -45,7 +45,7 @@ if (window.matchMedia("screen and (max-width: 768px)").matches) {
     slidesToScroll: 1,
     centerMode: true,
     variableWidth: true,
-    adaptiveHeight: true,
+    // adaptiveHeight: true,
     arrows: false,
     responsive: [{
       breakpoint: 576,
