@@ -1,0 +1,62 @@
+.social {
+  width: 100%;
+  max-width: 200px;
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.social__item {
+  // margin-right: auto;
+
+  &:nth-child(3n - 1) {
+    margin-left: 72px;
+    margin-right: 72px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  &::after {
+    font-family: "Social";
+    font-size: 24px;
+    color: $black;
+    opacity: 0.6;
+    transition: all ease-in 0.2s;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.social__link--in {
+  &::after {
+    content: "I";
+  }
+}
+
+.social__link--skype {
+  &::after {
+    content: "o";
+  }
+}
+
+.social__link--else {
+  &::after {
+    content: "m";
+  }
+}

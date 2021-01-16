@@ -1,0 +1,40 @@
+.services {
+
+}
+
+.services__wrapper {
+  padding-top: 65px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.services__title {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $gray;
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+}
+
+.services__dscr {
+  width: 100%;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+
+  @media screen and (max-width: $small) {
+    font-size: 16px;
+  }
+}
+
+.services__btn {
+  padding: 16px 81px;
+
+  @media screen and (max-width: $small) {
+    padding: 10px 34px;
+  }
+}
+

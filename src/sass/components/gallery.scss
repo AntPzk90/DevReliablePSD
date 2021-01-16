@@ -1,0 +1,75 @@
+.gallery {
+  background-image: url("../img/slider_bg_color.png");
+  background-size: 100% 602px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: $medium) {
+    background-size: 100% 442px;
+  }
+
+  @media screen and (max-width: $small) {
+    background-size: 100% 202px;
+  }
+}
+
+.gallery__wrapper {
+  padding-top: 145px;
+  padding-bottom: 66px;
+  background-image: url("../img/slider_bg.png");
+  background-size: 100% 602px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: $medium) {
+    padding-top: 85px;
+    padding-bottom: 60px;
+    background-size: 100% 442px;
+  }
+
+  @media screen and (max-width: $small) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-size: 100% 202px;
+  }
+}
+
+.gallery__slider {
+  width: 100%;
+  max-width: 756px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $medium) {
+    max-width: 680px;
+  }
+
+  @media screen and (max-width: $small) {
+    max-width: 320px;
+  }
+}
+
+.gallery__slider-img {
+  width: 100%;
+
+  @media screen and (max-width: $medium) {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+.gallery__slider-item {
+  outline: none;
+
+  @media screen and (max-width: $medium) {
+    max-width: 680px;
+    width: 80%;
+  }
+
+  @media screen and (max-width: $small) {
+    max-width: 320px;
+  }
+}
